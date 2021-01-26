@@ -107,7 +107,7 @@ p{
   animation-delay: .3s;
 }
 
-#hero .btn{
+.btn{
   display: inline-block;
   padding:10px 30px ;
   color:white;
@@ -122,7 +122,7 @@ p{
 
 }
 
-#hero .btn:hover{
+.btn:hover{
  color:crimson;
  background-color:rgb(26, 16, 16);
 }
@@ -313,11 +313,121 @@ p{
 #projects .project-img img{
   transition: .3s ease transform ;
 }
-#projetcs .projects-item:hover .project-img img{
+#projects .projects-item:hover .project-img img{
   transform:scale(1.1);
 }
 
 /* End of Project section */
+
+/*About section */
+#about .about{
+  flex-direction: column-reverse;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 20px;
+
+}
+
+#about .col-left{
+  height:360px;
+  width:250px;
+} 
+
+#about .col-right{
+ width: 100%;  
+}
+
+#about .col-right h2{
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: .2rem;
+  margin-bottom: 10px;
+  
+}
+
+#about .col-right p{
+  margin-bottom: 20px;
+}
+
+#about .col-right .btn{
+  color:crimson;
+  margin-bottom: 50px;
+  padding: 10px 20px;
+  font-size: 2rem;
+}
+
+#about .col-left .about-img{
+  position: relative;
+  border: 10px solid white;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+#about .col-left .about-img::after{
+content: '';
+position: absolute;
+left: -33px;
+top: 19px;
+height: 98%;
+width: 98%;
+border: 7px solid crimson;
+z-index:-1;
+}
+
+/* End of About section */
+/* contact section*/
+#contact .contact{
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#contact .contact-items{
+  width: 400px; 
+
+}
+
+#contact .contact-item{
+  width: 80%;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 30px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 18px 0px #485563;
+  flex-direction: column;
+  transition: .3s ease box-shadow;
+}
+
+#contact .contact-item:hover{
+  box-shadow: 0px 0px 5px 0px #485563 ;
+}
+
+#contact .icon{
+  width: 70px;
+  margin: 0 auto;
+  margin-bottom:10px ;
+}
+
+#contact .contact-info h1{
+  font-size: 2.5rem;
+  font-weight:500;
+  margin-bottom: 5px;
+}
+
+#contact .contact-info h2{
+  font-size: 1.3rem;
+  font-weight:900;
+  line-height: 2rem;
+  
+}
+/* end of contact section*/
+
 
 /* keyframe */
 @keyframes text_reveal_box{
