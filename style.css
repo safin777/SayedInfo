@@ -9,6 +9,7 @@
 html{
   font-size: 10px;
   font-family:'Montserrat',sans-serif;
+  
 }
 
 a{
@@ -403,7 +404,7 @@ z-index:-1;
 
 #contact .contact-item{
   width: 80%;
-  padding: 30px;
+  padding: 20px;
   text-align: center;
   border-radius: 10px;
   margin: 30px;
@@ -433,7 +434,7 @@ z-index:-1;
 
 #contact .contact-info h2{
   font-size: 1.3rem;
-  font-weight:900;
+  font-weight:500;
   line-height: 2rem;
   
 }
@@ -536,10 +537,103 @@ z-index:-1;
   }
   /*service section*/
 
-  #services  .service-bottom .service-item{
+  #services .service-bottom .service-item{
     flex-basis: 40%;
     margin:2.5%;
-    
+    display:table-column;
+  }
+
+  /* project */
+  #projects .projects-item{
+    flex-direction: row;
+  }
+
+  #projects .projects-item:nth-child(even){
+    flex-direction: row-reverse;
+  }
+  #projects .projects-item{
+    height: 400px;
+    margin:0;
+    width: 100%;
+    border-radius: 0;
+
+  }
+
+  #projects .all-project .projects-info{
+    height: 100%;
+  }
+
+  #projects .all-project .project-img{
+    height: 100%;
+  }
+  /* end of project */
+
+  /* about */
+  #about .about{
+    flex-direction: row;
+   
+  }
+
+  #about .col-left{
+    width: 600px;
+    height: 400px;
+    padding-left: 60px;
+  }
+
+  #about .about .col-left .about-img::after{
+    left:-45px;
+    top: 34px;
+    height: 98%;
+    width: 98%;
+    border: 10px solid crimson;
+  }
+
+  #about .col-right{
+    text-align: left;
+    padding: 30px;
+  } 
+
+  #about .col-right h1{
+    text-align: left;
+  }
+
+  /* contact */
+
+  #contact .contact{
+    flex-direction: column;
+    padding: 100px 0;
+    align-items: center;
+    justify-content: center;
+    min-width:20vh;
+
+  }
+
+  #contact .contact-items{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 20px;
+  }
+
+  #contact .contact-item{
+    margin: 20px ;
+    flex-direction: row;
+  }
+
+  #contact .contact-item .icon{
+    height: 100px;
+    width: 100px;
+  }
+
+  #contact .contact-item .icon img{
+     object-fit: contain;
+  }
+
+  #contact .contact-item .contact-info{
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
   }
 }
 
